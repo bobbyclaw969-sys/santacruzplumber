@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aptos Plumbing Pros | Aptos's Premier Plumber Since 1999</title>
-    <meta name="description" content="Aptos Plumbing Pros - Aptos's premier family-owned plumber. Diamond Certified, BBB A+ rated. Emergency services, drain cleaning, sewer & water heater. Call (831) 476-1712">
+    <title>Duncan Plumbing | Aptos's Premier Plumber Since 1999</title>
+    <meta name="description" content="Duncan Plumbing - Aptos's premier family-owned plumber. Diamond Certified, BBB A+ rated. Emergency services, drain cleaning, sewer & water heater. Call (831) 476-1712">
     <meta name="keywords" content="plumber aptos, duncan plumbing, drain cleaning aptos, emergency plumber, water heater installation, sewer repair">
     <meta name="geo.region" content="US-CA">
     <meta name="geo.placename" content="Aptos">
@@ -28,12 +28,12 @@
         
         .logo { display: flex; align-items: center; gap: 15px; }
         .logo-icon { 
-            width: 70px; height: 70px; 
+            width: 280px; height: 280px; /* 4x larger */
             background: var(--primary);
             border-radius: 50%; 
             display: flex; align-items: center; justify-content: center;
             box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
-            padding: 10px;
+            padding: 40px;
             position: relative;
         }
         .logo-icon svg { width: 100%; height: 100%; }
@@ -191,6 +191,7 @@
             .hero h1 { font-size: 2.2rem; }
             .header-content { flex-direction: column; gap: 15px; }
             .header-cta { flex-direction: column; }
+            .logo-icon { width: 140px; height: 140px; } /* Adjust for mobile */
         }
     </style>
 </head>
@@ -201,26 +202,32 @@
         <div class="header-content">
             <div class="logo">
                 <div class="logo-icon">
-                    <!-- Improved Crossed Wrench & Pipe Logo - like VectorStock example -->
-                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Wrench 1 - diagonal -->
-                        <path d="M12 35L35 12" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                    <!-- Detailed Crossed Pipe Wrenches in X Shape -->
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Wrench 1 -->
+                        <path d="M50 150L150 50" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
                         <!-- Wrench head 1 -->
-                        <circle cx="10" cy="37" r="7" fill="white"/>
-                        <circle cx="10" cy="37" r="3" fill="#e63946"/>
-                        <!-- Wrench 2 - opposite diagonal -->
-                        <path d="M12 15L35 38" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                        <rect x="30" y="130" width="40" height="40" rx="10" fill="white" transform="rotate(45 50 150)"/>
+                        <rect x="35" y="135" width="30" height="30" rx="8" fill="#e63946" transform="rotate(45 50 150)"/>
+                        <!-- Wrench jaw 1 -->
+                        <path d="M20 160L40 140" stroke="white" stroke-width="10" stroke-linecap="round"/>
+                        <path d="M10 150L30 130" stroke="white" stroke-width="10" stroke-linecap="round"/>
+                        <!-- Wrench 2 -->
+                        <path d="M50 50L150 150" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
                         <!-- Wrench head 2 -->
-                        <circle cx="10" cy="13" r="7" fill="white"/>
-                        <circle cx="10" cy="13" r="3" fill="#e63946"/>
-                        <!-- Center pipe connection -->
-                        <rect x="20" y="20" width="10" height="10" rx="2" fill="white"/>
-                        <rect x="22" y="22" width="6" height="6" rx="1" fill="#e63946"/>
+                        <rect x="130" y="30" width="40" height="40" rx="10" fill="white" transform="rotate(45 150 50)"/>
+                        <rect x="135" y="35" width="30" height="30" rx="8" fill="#e63946" transform="rotate(45 150 50)"/>
+                        <!-- Wrench jaw 2 -->
+                        <path d="M160 40L140 20" stroke="white" stroke-width="10" stroke-linecap="round"/>
+                        <path d="M150 30L130 10" stroke="white" stroke-width="10" stroke-linecap="round"/>
+                        <!-- Center cross detail -->
+                        <circle cx="100" cy="100" r="20" fill="#e63946"/>
+                        <circle cx="100" cy="100" r="10" fill="white"/>
                     </svg>
                 </div>
                 <div class="logo-text">
-                    DUNCAN
-                    <span>PLUMBING</span>
+                    Aptos Plumbing Pros
+                    <span></span>
                 </div>
             </div>
             <div class="header-cta">
@@ -360,7 +367,7 @@
     
     <section class="why-choose">
         <div class="section-title">
-            <h2>Why Choose Aptos Plumbing Pros?</h2>
+            <h2>Why Choose Duncan Plumbing?</h2>
         </div>
         <div class="why-grid">
             <div class="why-item">
@@ -437,7 +444,7 @@
     </section>
     
     <footer class="footer">
-        <p>© 2026 Aptos Plumbing Pros. All rights reserved.</p>
+        <p>© 2026 Duncan Plumbing. All rights reserved.</p>
         <p>Licensed #784642 | Diamond Certified | BBB A+ Rated</p>
         <p>1245 Thompson Avenue, Aptos, CA 95062</p>
         <a href="tel:+18314761712" class="phone-number">📞 (831) 476-1712</a>

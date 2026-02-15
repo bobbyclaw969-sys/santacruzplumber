@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scotts Valley Plumbing Pros | Scotts Valley's #1 Plumber | Drain Cleaning & Emergency Services</title>
-    <meta name="description" content="Scotts Valley Plumbing Pros - Scotts Valley's premier plumber. Diamond Certified, BBB A+ rated. Emergency services, drain cleaning, water heaters. Call (831) 476-1712">
-    <meta name="keywords" content="plumber scotts valley, duncan plumbing, drain cleaning scotts valley, emergency plumber, water heater installation">
+    <title>Scotts Valley Plumbing Pros | Scotts Valley's Premier Plumber Since 1999</title>
+    <meta name="description" content="Scotts Valley Plumbing Pros - Scotts Valley's premier family-owned plumber. Diamond Certified, BBB A+ rated. Emergency services, drain cleaning, sewer & water heater. Call (831) 476-1712">
+    <meta name="keywords" content="plumber scotts valley, duncan plumbing, drain cleaning scotts valley, emergency plumber, water heater installation, sewer repair">
     <meta name="geo.region" content="US-CA">
     <meta name="geo.placename" content="Scotts Valley">
     <meta name="robots" content="index, follow">
@@ -14,233 +14,336 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
         
-        .header { background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .top-bar { background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 100%); color: white; padding: 8px 20px; text-align: center; font-size: 0.95rem; }
+        
+        .header { background: white; color: #1a1a1a; padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.1); }
         .header-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
         
-        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo { display: flex; align-items: center; gap: 15px; }
         .logo-icon { 
-            width: 60px; height: 60px; 
-            background: #1e3a5f;
+            width: 70px; height: 70px; 
+            background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 100%);
             border-radius: 50%; 
             display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            border: 3px solid white;
+            box-shadow: 0 4px 15px rgba(26, 95, 42, 0.3);
         }
-        .logo-text { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.5px; }
-        .logo-text span { display: block; font-size: 0.9rem; font-weight: 400; opacity: 0.9; letter-spacing: 1px; }
+        .logo-text { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px; color: #1a1a1a; }
+        .logo-text span { display: block; font-size: 0.85rem; font-weight: 500; color: #1a5f2a; letter-spacing: 2px; }
         
-        .cta-button { background: #1e3a5f; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; transition: transform 0.2s; }
-        .cta-button:hover { transform: translateY(-2px); }
+        .header-cta { display: flex; align-items: center; gap: 20px; }
+        .phone { font-size: 1.3rem; font-weight: 700; color: #1a5f2a; text-decoration: none; }
+        .cta-button { background: #e31837; color: white; padding: 14px 28px; border: none; border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(227, 24, 55, 0.4); }
         
-        .hero { background: linear-gradient(rgba(30, 58, 95, 0.85), rgba(30, 58, 95, 0.85)), url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80'); background-size: cover; background-position: center; color: white; padding: 120px 20px; text-align: center; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; }
-        .hero p { font-size: 1.3rem; margin-bottom: 30px; opacity: 0.95; }
+        .hero { background: linear-gradient(rgba(26, 95, 42, 0.92), rgba(26, 95, 42, 0.88)), url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80'); background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 20px; line-height: 1.2; font-weight: 800; }
+        .hero p { font-size: 1.4rem; margin-bottom: 15px; opacity: 0.95; }
+        .hero-sub { font-size: 1.1rem; opacity: 0.85; margin-bottom: 30px; }
         .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-        .hero .cta-button { padding: 18px 35px; font-size: 1.2rem; }
+        .hero .cta-button { padding: 16px 32px; font-size: 1.1rem; }
+        .hero .cta-button.secondary { background: white; color: #1a5f2a; }
         
-        .trust-badges { background: #f8f9fa; padding: 30px 20px; text-align: center; }
-        .badges { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
-        .badge { display: flex; align-items: center; gap: 10px; font-weight: 600; color: #555; font-size: 1.1rem; }
-        .badge-icon { width: 35px; height: 35px; background: #e67e22; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem; }
+        .coupons { background: #1a1a1a; padding: 50px 20px; }
+        .coupons-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .coupon { background: white; border-radius: 12px; padding: 30px; text-align: center; border: 3px dashed #e31837; position: relative; }
+        .coupon-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #e31837; color: white; padding: 5px 20px; font-weight: 700; border-radius: 20px; font-size: 0.9rem; }
+        .coupon-price { font-size: 2.5rem; font-weight: 800; color: #1a5f2a; margin: 10px 0; }
+        .coupon-title { font-size: 1.3rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+        .coupon-sub { color: #666; font-size: 0.95rem; }
         
-        .certifications { background: #1e3a5f; padding: 20px; text-align: center; color: white; }
-        .cert-text { font-size: 1.1rem; font-weight: 600; }
+        .trust-badges { background: #f5f5f5; padding: 40px 20px; text-align: center; }
+        .trust-grid { max-width: 1000px; margin: 0 auto; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .trust-item { display: flex; align-items: center; gap: 10px; }
+        .trust-icon { width: 50px; height: 50px; background: #1a5f2a; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.3rem; }
+        .trust-text { text-align: left; }
+        .trust-title { font-weight: 700; color: #1a1a1a; }
+        .trust-sub { font-size: 0.9rem; color: #666; }
+        
+        .certifications { background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 100%); padding: 25px; text-align: center; color: white; }
+        .cert-text { font-size: 1.2rem; font-weight: 600; }
         
         .services { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
         .section-title { text-align: center; margin-bottom: 50px; }
-        .section-title h2 { font-size: 2.8rem; color: #1e3a5f; margin-bottom: 15px; }
-        .section-title p { color: #666; font-size: 1.2rem; }
+        .section-title h2 { font-size: 2.5rem; color: #1a1a1a; margin-bottom: 15px; }
+        .section-title p { color: #666; font-size: 1.1rem; }
         
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; }
-        .service-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .service-card:hover { transform: translateY(-8px); }
-        .service-img { width: 100%; height: 260px; object-fit: cover; }
-        .service-content { padding: 30px; }
-        .service-card h3 { font-size: 1.5rem; margin-bottom: 12px; color: #1e3a5f; }
-        .service-card p { color: #555; line-height: 1.7; font-size: 1.05rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .service-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 25px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-img { width: 100%; height: 200px; object-fit: cover; }
+        .service-content { padding: 25px; }
+        .service-card h3 { font-size: 1.3rem; margin-bottom: 10px; color: #1a1a1a; }
+        .service-card p { color: #555; font-size: 0.95rem; }
         
-        .areas { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); padding: 80px 20px; color: white; }
-        .areas-content { max-width: 1200px; margin: 0 auto; }
-        .areas h2 { text-align: center; font-size: 2.5rem; margin-bottom: 15px; }
-        .areas > .areas-content > p { text-align: center; opacity: 0.9; font-size: 1.2rem; margin-bottom: 40px; }
-        .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; }
-        .area-tag { background: rgba(255,255,255,0.15); padding: 18px 25px; border-radius: 10px; text-align: center; font-weight: 600; font-size: 1.1rem; border: 1px solid rgba(255,255,255,0.2); }
+        .why-choose { background: #f5f5f5; padding: 80px 20px; }
+        .why-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .why-item { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.06); }
+        .why-icon { width: 70px; height: 70px; background: #1a5f2a; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; }
+        .why-item h3 { font-size: 1.2rem; color: #1a1a1a; margin-bottom: 10px; }
+        .why-item p { color: #666; font-size: 0.95rem; }
+        
+        .areas { background: #1a1a1a; padding: 60px 20px; color: white; text-align: center; }
+        .areas h2 { font-size: 2rem; margin-bottom: 30px; }
+        .areas-grid { max-width: 900px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+        .area-tag { background: #1a5f2a; padding: 12px 25px; border-radius: 8px; font-weight: 600; }
         
         .testimonials { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
         .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        .testimonial { background: white; padding: 35px; border-radius: 16px; border-left: 5px solid #e67e22; box-shadow: 0 5px 25px rgba(0,0,0,0.08); }
-        .testimonial-text { font-size: 1.1rem; font-style: italic; margin-bottom: 20px; color: #444; line-height: 1.7; }
-        .testimonial-author { font-weight: bold; color: #1e3a5f; font-size: 1.1rem; }
-        .testimonial-location { color: #888; font-size: 0.95rem; margin-top: 5px; }
+        .testimonial { background: #f5f5f5; padding: 30px; border-radius: 12px; border-left: 4px solid #1a5f2a; }
+        .testimonial-text { font-size: 1.05rem; font-style: italic; margin-bottom: 20px; color: #444; }
+        .testimonial-author { font-weight: 700; color: #1a1a1a; }
         
-        .cta-section { background: linear-gradient(135deg, #e67e22, #f39c12); color: white; padding: 80px 20px; text-align: center; }
-        .cta-section h2 { font-size: 2.8rem; margin-bottom: 20px; }
-        .cta-section p { font-size: 1.3rem; margin-bottom: 35px; opacity: 0.95; }
-        .cta-section .cta-button { background: white; color: #e67e22; padding: 18px 40px; font-size: 1.2rem; }
+        .cta-section { background: linear-gradient(135deg, #e31837, #c41230); color: white; padding: 70px 20px; text-align: center; }
+        .cta-section h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .cta-section p { font-size: 1.3rem; margin-bottom: 30px; opacity: 0.95; }
         
-        .footer { background: #1e3a5f; color: white; padding: 50px 20px; text-align: center; }
-        .footer p { opacity: 0.8; margin-bottom: 12px; }
-        .phone-number { font-size: 1.8rem; font-weight: bold; color: #e67e22; }
+        .footer { background: #1a1a1a; color: white; padding: 50px 20px; text-align: center; }
+        .footer p { opacity: 0.8; margin-bottom: 10px; }
+        .footer a { color: #4ade80; text-decoration: none; }
+        .phone-number { font-size: 1.6rem; font-weight: 700; color: #4ade80; margin-top: 15px; }
         
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .section-title h2 { font-size: 2rem; }
-            .badges { flex-direction: column; align-items: center; }
+            .hero h1 { font-size: 2rem; }
+            .header-content { flex-direction: column; gap: 15px; }
+            .header-cta { flex-direction: column; }
         }
     </style>
 </head>
 <body>
+    <div class="top-bar">Family-Owned & Operated Since 1999 • Licensed & Insured</div>
+    
     <header class="header">
         <div class="header-content">
             <div class="logo">
                 <div class="logo-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
-                        <path d="M12 2v4M12 6v2M8 8H4v4h4M16 8h4v4h-4M6 16H4v4h2M18 16h2v4h-2M12 18v4"/>
-                        <circle cx="12" cy="12" r="3"/>
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M12 2v6m0 0l3-3m-3 3L9 5"/>
+                        <circle cx="12" cy="14" r="4"/>
+                        <path d="M12 18v4"/>
                     </svg>
                 </div>
                 <div class="logo-text">
-                    DUNCAN
-                    <span>PLUMBING</span>
+                    DUNCAN PLUMBING
+                    <span>EST. 2010</span>
                 </div>
             </div>
-            <a href="tel:+18314761712" class="cta-button">📞 (831) 476-1712</a>
+            <div class="header-cta">
+                <a href="tel:+18314761712" class="phone">📞 (831) 476-1712</a>
+                <a href="#contact" class="cta-button">Request Service</a>
+            </div>
         </div>
     </header>
     
     <section class="hero">
-        <h1>Scotts Valley's #1 Plumber</h1>
-        <p>Diamond Certified • BBB A+ • Emergency Services Available</p>
-        <p>Professional Drain Cleaning, Sewer & Water Heater Services</p>
+        <h1>Scotts Valley's Trusted Plumber</h1>
+        <p>Family-Owned. Community-Trusted. Since 1999.</p>
+        <p class="hero-sub">Diamond Certified • BBB A+ • Live Answer 24/7</p>
         <div class="hero-buttons">
             <a href="#contact" class="cta-button">Get Free Quote</a>
-            <a href="tel:+18314761712" class="cta-button" style="background: rgba(255,255,255,0.2);">Call Now</a>
+            <a href="tel:+18314761712" class="cta-button secondary">Call Now</a>
+        </div>
+    </section>
+    
+    <section class="coupons">
+        <div class="coupons-grid">
+            <div class="coupon">
+                <div class="coupon-badge">LIMITED TIME</div>
+                <div class="coupon-price">$99</div>
+                <div class="coupon-title">Main Line Drain Cleaning</div>
+                <div class="coupon-sub">Starting at ground level clean out</div>
+            </div>
+            <div class="coupon">
+                <div class="coupon-badge">SAVE $50</div>
+                <div class="coupon-price">$175</div>
+                <div class="coupon-title">Sewer Camera Inspection</div>
+                <div class="coupon-sub">With main line cleaning</div>
+            </div>
+            <div class="coupon">
+                <div class="coupon-badge">FREE</div>
+                <div class="coupon-price">FREE</div>
+                <div class="coupon-title">Second Opinions</div>
+                <div class="coupon-sub">For any plumbing job</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="trust-badges">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <div class="trust-icon">★</div>
+                <div class="trust-text">
+                    <div class="trust-title">5.0 Stars</div>
+                    <div class="trust-sub">Google Reviews</div>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">★</div>
+                <div class="trust-text">
+                    <div class="trust-title">4.9 Stars</div>
+                    <div class="trust-sub">Yelp Reviews</div>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">✓</div>
+                <div class="trust-text">
+                    <div class="trust-title">Diamond Certified</div>
+                    <div class="trust-sub">12+ Years</div>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">✓</div>
+                <div class="trust-text">
+                    <div class="trust-title">BBB A+ Rated</div>
+                    <div class="trust-sub">Accredited</div>
+                </div>
+            </div>
         </div>
     </section>
     
     <section class="certifications">
-        <p class="cert-text">🏆 Diamond Certified • BBB A+ Rated • Licensed #784642 • Live Answer 24/7</p>
-    </section>
-    
-    <section class="trust-badges">
-        <div class="badges">
-            <div class="badge"><div class="badge-icon">✓</div><span>Licensed & Insured</span></div>
-            <div class="badge"><div class="badge-icon">✓</div><span>100% Satisfaction</span></div>
-            <div class="badge"><div class="badge-icon">✓</div><span>24/7 Emergency</span></div>
-            <div class="badge"><div class="badge-icon">✓</div><span>Same-Day Service</span></div>
-        </div>
+        <p class="cert-text">🏆 Licensed #784642 • Diamond Certified • 100% Satisfaction Guaranteed • Free Estimates</p>
     </section>
     
     <section class="services">
         <div class="section-title">
-            <h2>Our Plumbing Services</h2>
-            <p>Complete plumbing solutions for residential & commercial properties</p>
+            <h2>All The Plumbing Services You Need</h2>
+            <p>From simple repairs to complex installations - we've got you covered</p>
         </div>
         
         <div class="services-grid">
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80" alt="Drain Cleaning Scotts Valley" class="service-img">
+                <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Drain Cleaning" class="service-img">
                 <div class="service-content">
                     <h3>Drain Cleaning</h3>
-                    <p>Professional drain cleaning for clogged sinks, showers, toilets, and main sewer lines. Advanced equipment to clear any blockage.</p>
+                    <p>Professional drain cleaning. Sewer lines, clogged drains, hydro jetting services.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Water Heater Installation Scotts Valley" class="service-img">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Water Heater" class="service-img">
                 <div class="service-content">
-                    <h3>Water Heater Services</h3>
-                    <p>Installation, repair, and maintenance for all water heater types. Tankless and traditional service available.</p>
+                    <h3>Water Heaters</h3>
+                    <p>Installation and repair. Tankless, traditional, and traditional water heaters.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Leak Repair Scotts Valley" class="service-img">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Sewer Repair" class="service-img">
                 <div class="service-content">
-                    <h3>Leak Repair</h3>
-                    <p>Fast leak detection and repair. From dripping faucets to hidden pipe leaks, we fix it quickly.</p>
+                    <h3>Sewer & Drain</h3>
+                    <p>Trenchless sewer repair, camera inspections, and main line services.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Toilet Repair Scotts Valley" class="service-img">
+                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Toilet Repair" class="service-img">
                 <div class="service-content">
                     <h3>Toilet Repair</h3>
-                    <p>Toilet installation, repair, and replacement. We fix running toilets, clogs, and all toilet issues promptly.</p>
+                    <p>Clogged toilets, running toilets, toilet installation and replacement.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80" alt="Faucet Fixture Scotts Valley" class="service-img">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Faucet Repair" class="service-img">
                 <div class="service-content">
-                    <h3>Faucet & Fixture</h3>
-                    <p>Professional installation and repair of all types of faucets, showerheads, and plumbing fixtures.</p>
+                    <h3>Faucets & Fixtures</h3>
+                    <p>Installation and repair of all faucet types, showerheads, and fixtures.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Emergency Plumbing Scotts Valley" class="service-img">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Emergency Plumbing" class="service-img">
                 <div class="service-content">
-                    <h3>Emergency Plumbing</h3>
-                    <p>24/7 emergency plumbing when you need us most. Available nights, weekends, and holidays.</p>
+                    <h3>24/7 Emergency</h3>
+                    <p>Emergency plumbing services when you need us most. Day or night.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="why-choose">
+        <div class="section-title">
+            <h2>Why Choose Scotts Valley Plumbing Pros?</h2>
+        </div>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-icon">⚡</div>
+                <h3>Same-Day Service</h3>
+                <p>When you need help, we be there on time, all the time.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">💰</div>
+                <h3>No Upsells</h3>
+                <p>We don't give our plumbers sales quotas. No pointless upsells!</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">✓</div>
+                <h3>Satisfaction Guaranteed</h3>
+                <p>If you're not 100% satisfied, we'll make it right.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">📋</div>
+                <h3>Free Estimates</h3>
+                <p>We proudly offer 100% free estimates on all services.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">💵</div>
+                <h3>Transparent Pricing</h3>
+                <p>Our pricing is clear and simple. No hidden costs.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">🛡️</div>
+                <h3>Licensed & Insured</h3>
+                <p>Fully licensed and insured for your protection.</p>
             </div>
         </div>
     </section>
     
     <section class="areas">
-        <div class="areas-content">
-            <h2>Serving Scotts Valley County</h2>
-            <p>Proudly serving these communities</p>
-            <div class="areas-grid">
-                <div class="area-tag">Scotts Valley</div>
-                <div class="area-tag">Aptos</div>
-                <div class="area-tag">Capitola</div>
-                <div class="area-tag">Soquel</div>
-                <div class="area-tag">Watsonville</div>
-                <div class="area-tag">Scotts Valley</div>
-                <div class="area-tag">Felton</div>
-                <div class="area-tag">Los Gatos</div>
-                <div class="area-tag">Ben Lomond</div>
-            </div>
+        <h2>Proudly Serving Scotts Valley County</h2>
+        <div class="areas-grid">
+            <div class="area-tag">Scotts Valley</div>
+            <div class="area-tag">Aptos</div>
+            <div class="area-tag">Capitola</div>
+            <div class="area-tag">Soquel</div>
+            <div class="area-tag">Watsonville</div>
+            <div class="area-tag">Scotts Valley</div>
+            <div class="area-tag">Felton</div>
+            <div class="area-tag">Los Gatos</div>
         </div>
     </section>
     
     <section class="testimonials">
         <div class="section-title">
             <h2>What Our Customers Say</h2>
-            <p>Trusted by homeowners throughout Scotts Valley County</p>
         </div>
         <div class="testimonials-grid">
             <div class="testimonial">
-                <p class="testimonial-text">"Fast response time and excellent work! They fixed my leak within an hour of calling."</p>
-                <p class="testimonial-author">John D.</p>
-                <p class="testimonial-location">Scotts Valley, CA</p>
+                <p class="testimonial-text">"Fast response time and excellent work! They fixed my leak within an hour. Very professional and reasonably priced."</p>
+                <p class="testimonial-author">- John D., Scotts Valley</p>
             </div>
             <div class="testimonial">
                 <p class="testimonial-text">"Best plumber in Scotts Valley! They installed my new water heater same-day. Very clean work."</p>
-                <p class="testimonial-author">Sarah M.</p>
-                <p class="testimonial-location">Aptos, CA</p>
+                <p class="testimonial-author">- Sarah M., Aptos</p>
             </div>
             <div class="testimonial">
                 <p class="testimonial-text">"Had an emergency on a Sunday night. They answered immediately and were at my house within 30 minutes!"</p>
-                <p class="testimonial-author">Mike R.</p>
-                <p class="testimonial-location">Capitola, CA</p>
+                <p class="testimonial-author">- Mike R., Capitola</p>
             </div>
         </div>
     </section>
     
     <section id="contact" class="cta-section">
-        <h2>Ready to Fix Your Plumbing Issue?</h2>
-        <p>Get a free estimate today.</p>
-        <a href="tel:+18314761712" class="cta-button">📞 Call (831) 476-1712</a>
+        <h2>Ready To Fix Your Plumbing?</h2>
+        <p>Call now for fast, friendly, professional service.</p>
+        <a href="tel:+18314761712" class="cta-button" style="background: white; color: #e31837;">📞 Call (831) 476-1712</a>
     </section>
     
     <footer class="footer">
         <p>© 2026 Scotts Valley Plumbing Pros. All rights reserved.</p>
         <p>Licensed #784642 | Diamond Certified | BBB A+ Rated</p>
         <p>1245 Thompson Avenue, Scotts Valley, CA 95062</p>
-        <p class="phone-number">📞 (831) 476-1712</p>
+        <a href="tel:+18314761712" class="phone-number">📞 (831) 476-1712</a>
     </footer>
 </body>
 </html>

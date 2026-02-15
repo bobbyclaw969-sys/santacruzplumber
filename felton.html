@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Plumber in Felton | Emergency Plumbing Services Felton CA</title>
+    <meta name="description" content="Need a reliable plumber in Felton? We provide emergency plumbing services, drain cleaning, water heater installation, and more. Serving Felton, Aptos, Capitola & surrounding areas. Licensed & insured. Call now!">
+    <meta name="keywords" content="plumber felton, emergency plumber felton, plumbing services felton">
+    <meta name="geo.region" content="US-CA">
+    <meta name="geo.placename" content="Felton">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        
+        .header { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { 
+            width: 55px; height: 55px; 
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%);
+            border-radius: 12px; 
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+        .logo-text { font-size: 1.6rem; font-weight: bold; }
+        .logo-text span { color: #ff6b35; }
+        
+        .cta-button { background: #ff6b35; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4); }
+        
+        .hero { background: linear-gradient(rgba(30, 58, 95, 0.75), rgba(45, 90, 135, 0.75)), url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80'); background-size: cover; background-position: center; color: white; padding: 120px 20px; text-align: center; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.3rem; margin-bottom: 30px; opacity: 0.95; }
+        .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .hero .cta-button { padding: 18px 35px; font-size: 1.2rem; }
+        
+        .trust-badges { background: #f8f9fa; padding: 30px 20px; text-align: center; }
+        .badges { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        .badge { display: flex; align-items: center; gap: 10px; font-weight: 600; color: #555; font-size: 1.1rem; }
+        .badge-icon { width: 35px; height: 35px; background: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem; }
+        
+        .services { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.8rem; color: #1e3a5f; margin-bottom: 15px; }
+        .section-title p { color: #666; font-size: 1.2rem; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; }
+        .service-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 15px 50px rgba(0,0,0,0.15); }
+        .service-img { width: 100%; height: 260px; object-fit: cover; }
+        .service-content { padding: 30px; }
+        .service-card h3 { font-size: 1.5rem; margin-bottom: 12px; color: #1e3a5f; }
+        .service-card p { color: #555; line-height: 1.7; font-size: 1.05rem; }
+        
+        .areas { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); padding: 80px 20px; color: white; }
+        .areas-content { max-width: 1200px; margin: 0 auto; }
+        .areas h2 { text-align: center; font-size: 2.5rem; margin-bottom: 15px; }
+        .areas > .areas-content > p { text-align: center; opacity: 0.9; font-size: 1.2rem; margin-bottom: 40px; }
+        .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; }
+        .area-tag { background: rgba(255,255,255,0.15); padding: 18px 25px; border-radius: 10px; text-align: center; font-weight: 600; font-size: 1.1rem; border: 1px solid rgba(255,255,255,0.2); }
+        
+        .testimonials { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .testimonial { background: white; padding: 35px; border-radius: 16px; border-left: 5px solid #ff6b35; box-shadow: 0 5px 25px rgba(0,0,0,0.08); }
+        .testimonial-text { font-size: 1.1rem; font-style: italic; margin-bottom: 20px; color: #444; line-height: 1.7; }
+        .testimonial-author { font-weight: bold; color: #1e3a5f; font-size: 1.1rem; }
+        .testimonial-location { color: #888; font-size: 0.95rem; margin-top: 5px; }
+        
+        .cta-section { background: linear-gradient(135deg, #ff6b35, #ff8c5a); color: white; padding: 80px 20px; text-align: center; }
+        .cta-section h2 { font-size: 2.8rem; margin-bottom: 20px; }
+        .cta-section p { font-size: 1.3rem; margin-bottom: 35px; opacity: 0.95; }
+        .cta-section .cta-button { background: white; color: #ff6b35; padding: 18px 40px; font-size: 1.2rem; }
+        
+        .footer { background: #1e3a5f; color: white; padding: 50px 20px; text-align: center; }
+        .footer p { opacity: 0.8; margin-bottom: 12px; }
+        .footer a { color: #ff6b35; text-decoration: none; }
+        .phone-number { font-size: 1.8rem; font-weight: bold; color: #ff6b35; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .section-title h2 { font-size: 2rem; }
+            .badges { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M12 2v6m0 0l3-3m-3 3L9 5"/>
+                        <circle cx="12" cy="14" r="4"/>
+                        <path d="M12 18v4m-4-2h8"/>
+                    </svg>
+                </div>
+                <div class="logo-text">M.C. <span>Plumbing</span></div>
+            </div>
+            <a href="tel:+18314660108" class="cta-button">📞 (831) 466-0108</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>Need a Plumber in Felton?</h1>
+        <p>Fast, Reliable Plumbing Services in Felton, Aptos, Capitola & Surrounding Areas</p>
+        <p>Licensed • Insured • Same-Day Service Available</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="cta-button">Get Free Quote</a>
+            <a href="tel:+18314660108" class="cta-button" style="background: rgba(255,255,255,0.2);">Call Now</a>
+        </div>
+    </section>
+    
+    <section class="trust-badges">
+        <div class="badges">
+            <div class="badge"><div class="badge-icon">✓</div><span>Licensed & Insured</span></div>
+            <div class="badge"><div class="badge-icon">✓</div><span>100% Satisfaction</span></div>
+            <div class="badge"><div class="badge-icon">✓</div><span>24/7 Emergency</span></div>
+            <div class="badge"><div class="badge-icon">✓</div><span>Upfront Pricing</span></div>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="section-title">
+            <h2>Our Plumbing Services</h2>
+            <p>Complete plumbing solutions for residential & commercial properties</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80" alt="Professional plumber working" class="service-img">
+                <div class="service-content">
+                    <h3>Drain Cleaning</h3>
+                    <p>Professional drain cleaning for clogged sinks, showers, toilets, and main sewer lines. We use advanced equipment to clear any blockage quickly.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Water heater installation" class="service-img">
+                <div class="service-content">
+                    <h3>Water Heater Services</h3>
+                    <p>Installation, repair, and maintenance for tankless and traditional water heaters. Get hot water back fast with our expert technicians.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Plumbing pipes repair" class="service-img">
+                <div class="service-content">
+                    <h3>Leak Repair</h3>
+                    <p>Fast leak detection and repair. From dripping faucets to hidden pipe leaks, we find and fix the problem quickly before it causes damage.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Toilet repair service" class="service-img">
+                <div class="service-content">
+                    <h3>Toilet Repair</h3>
+                    <p>Toilet installation, repair, and replacement. We fix running toilets, clogs, and all toilet issues promptly with same-day service.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Kitchen faucet installation" class="service-img">
+                <div class="service-content">
+                    <h3>Faucet & Fixture</h3>
+                    <p>Professional installation and repair of all types of faucets, showerheads, and plumbing fixtures. Upgrade your bathroom or kitchen today.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=800&q=80" alt="Emergency plumbing service" class="service-img">
+                <div class="service-content">
+                    <h3>Emergency Plumbing</h3>
+                    <p>24/7 emergency plumbing when you need us most. Available nights, weekends, and holidays for water heater failures, major leaks, and sewer backups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="areas">
+        <div class="areas-content">
+            <h2>Serving Felton County</h2>
+            <p>Proudly serving these communities and surrounding areas</p>
+            <div class="areas-grid">
+                <div class="area-tag">Felton</div>
+                <div class="area-tag">Aptos</div>
+                <div class="area-tag">Capitola</div>
+                <div class="area-tag">Soquel</div>
+                <div class="area-tag">Watsonville</div>
+                <div class="area-tag">Scotts Valley</div>
+                <div class="area-tag">Felton</div>
+                <div class="area-tag">Los Gatos</div>
+                <div class="area-tag">Ben Lomond</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>What Our Customers Say</h2>
+            <p>Trusted by homeowners throughout Felton County</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p class="testimonial-text">"Fast response time and excellent work! They fixed my leak within an hour of calling. Very professional and reasonably priced."</p>
+                <p class="testimonial-author">John D.</p>
+                <p class="testimonial-location">Felton, CA</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Best plumber in Felton! They installed my new water heater same-day. Very clean work and explained everything clearly."</p>
+                <p class="testimonial-author">Sarah M.</p>
+                <p class="testimonial-location">Aptos, CA</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Had an emergency on a Sunday night. They answered immediately and were at my house within 30 minutes. Life savers!"</p>
+                <p class="testimonial-author">Mike R.</p>
+                <p class="testimonial-location">Capitola, CA</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="cta-section">
+        <h2>Ready to Fix Your Plumbing Issue?</h2>
+        <p>Get a free estimate today. Call us or fill out the form below.</p>
+        <a href="tel:+18314660108" class="cta-button">📞 Call (831) 466-0108</a>
+    </section>
+    
+    <footer class="footer">
+        <p>© 2026 Felton Plumbing Pros. All rights reserved.</p>
+        <p>Licensed & Insured | Serving Felton, Aptos, Capitola, Soquel & Surrounding Areas</p>
+        <p class="phone-number">📞 (831) 466-0108</p>
+    </footer>
+</body>
+</html>

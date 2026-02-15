@@ -11,386 +11,76 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://santacruzplumber.pro/">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Best Plumber in Santa Cruz | Emergency Plumbing Services">
-    <meta property="og:description" content="Need a reliable plumber in Santa Cruz? We provide emergency plumbing services, drain cleaning, water heater installation, and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200">
-    
-    <!-- Schema.org LocalBusiness -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Plumber",
-        "name": "M.C. Plumbing",
-        "description": "Professional plumbing services in Santa Cruz County",
-        "areaServed": {
-            "@type": "Place",
-            "name": ["Santa Cruz", "Aptos", "Capitola", "Soquel", "Watsonville", "Scotts Valley"]
-        },
-        "priceRange": "$$"
-    }
-    </script>
-    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
         
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+        .header { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; gap: 10px; }
+        .logo-icon { width: 40px; height: 40px; background: #ff6b35; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+        .cta-button { background: #ff6b35; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4); }
         
-        .header {
-            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+        .hero { background: linear-gradient(rgba(30, 58, 95, 0.75), rgba(45, 90, 135, 0.75)), url('https://images.unsplash.com/photo-1581578731548-c64695ccb2c5?w=1920&q=80'); background-size: cover; background-position: center; color: white; padding: 120px 20px; text-align: center; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.3rem; margin-bottom: 30px; opacity: 0.95; }
+        .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .hero .cta-button { padding: 18px 35px; font-size: 1.2rem; }
         
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        .trust-badges { background: #f8f9fa; padding: 30px 20px; text-align: center; }
+        .badges { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        .badge { display: flex; align-items: center; gap: 10px; font-weight: 600; color: #555; font-size: 1.1rem; }
+        .badge-icon { width: 35px; height: 35px; background: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem; }
         
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        .services { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.8rem; color: #1e3a5f; margin-bottom: 15px; }
+        .section-title p { color: #666; font-size: 1.2rem; }
         
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: #ff6b35;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; }
+        .service-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 15px 50px rgba(0,0,0,0.15); }
+        .service-img { width: 100%; height: 260px; object-fit: cover; }
+        .service-content { padding: 30px; }
+        .service-card h3 { font-size: 1.5rem; margin-bottom: 12px; color: #1e3a5f; }
+        .service-card p { color: #555; line-height: 1.7; font-size: 1.05rem; }
         
-        .cta-button {
-            background: #ff6b35;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+        .areas { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); padding: 80px 20px; color: white; }
+        .areas-content { max-width: 1200px; margin: 0 auto; }
+        .areas h2 { text-align: center; font-size: 2.5rem; margin-bottom: 15px; }
+        .areas > .areas-content > p { text-align: center; opacity: 0.9; font-size: 1.2rem; margin-bottom: 40px; }
+        .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; }
+        .area-tag { background: rgba(255,255,255,0.15); padding: 18px 25px; border-radius: 10px; text-align: center; font-weight: 600; font-size: 1.1rem; border: 1px solid rgba(255,255,255,0.2); }
         
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
-        }
+        .testimonials { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .testimonial { background: white; padding: 35px; border-radius: 16px; border-left: 5px solid #ff6b35; box-shadow: 0 5px 25px rgba(0,0,0,0.08); }
+        .testimonial-text { font-size: 1.1rem; font-style: italic; margin-bottom: 20px; color: #444; line-height: 1.7; }
+        .testimonial-author { font-weight: bold; color: #1e3a5f; font-size: 1.1rem; }
+        .testimonial-location { color: #888; font-size: 0.95rem; margin-top: 5px; }
         
-        .hero {
-            background: linear-gradient(rgba(30, 58, 95, 0.85), rgba(45, 90, 135, 0.85)), url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
+        .cta-section { background: linear-gradient(135deg, #ff6b35, #ff8c5a); color: white; padding: 80px 20px; text-align: center; }
+        .cta-section h2 { font-size: 2.8rem; margin-bottom: 20px; }
+        .cta-section p { font-size: 1.3rem; margin-bottom: 35px; opacity: 0.95; }
+        .cta-section .cta-button { background: white; color: #ff6b35; padding: 18px 40px; font-size: 1.2rem; }
         
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .hero .cta-button {
-            padding: 15px 30px;
-            font-size: 1.1rem;
-        }
-        
-        .trust-badges {
-            background: #f8f9fa;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        
-        .badges {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 600;
-            color: #555;
-        }
-        
-        .badge-icon {
-            width: 30px;
-            height: 30px;
-            background: #28a745;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1rem;
-        }
-        
-        .services {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: #1e3a5f;
-            margin-bottom: 10px;
-        }
-        
-        .section-title p {
-            color: #666;
-            font-size: 1.1rem;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
-        
-        .service-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .service-content {
-            padding: 25px;
-        }
-        
-        .service-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #ff6b35, #ff8c5a);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-        
-        .service-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: #1e3a5f;
-        }
-        
-        .service-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-        
-        .service-card a {
-            color: #ff6b35;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        
-        .areas {
-            background: #f8f9fa;
-            padding: 60px 20px;
-        }
-        
-        .areas-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
-        }
-        
-        .area-tag {
-            background: white;
-            padding: 15px 20px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: 600;
-            color: #1e3a5f;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .testimonials {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-        
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        
-        .testimonial {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 12px;
-            border-left: 4px solid #ff6b35;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 15px;
-            color: #555;
-        }
-        
-        .testimonial-author {
-            font-weight: bold;
-            color: #1e3a5f;
-        }
-        
-        .testimonial-location {
-            color: #888;
-            font-size: 0.9rem;
-        }
-        
-        .cta-section {
-            background: linear-gradient(135deg, #ff6b35, #ff8c5a);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        .cta-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .cta-section p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
-        
-        .cta-section .cta-button {
-            background: white;
-            color: #ff6b35;
-        }
-        
-        .cta-section .cta-button:hover {
-            background: #f0f0f0;
-        }
-        
-        .footer {
-            background: #1e3a5f;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .footer p {
-            opacity: 0.8;
-            margin-bottom: 10px;
-        }
-        
-        .footer a {
-            color: #ff6b35;
-            text-decoration: none;
-        }
-        
-        .phone-number {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ff6b35;
-        }
+        .footer { background: #1e3a5f; color: white; padding: 50px 20px; text-align: center; }
+        .footer p { opacity: 0.8; margin-bottom: 12px; }
+        .footer a { color: #ff6b35; text-decoration: none; }
+        .phone-number { font-size: 1.8rem; font-weight: bold; color: #ff6b35; }
         
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .section-title h2 {
-                font-size: 2rem;
-            }
-            
-            .badges {
-                flex-direction: column;
-                align-items: center;
-            }
+            .hero h1 { font-size: 2.2rem; }
+            .section-title h2 { font-size: 2rem; }
+            .badges { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header-content">
-            <div class="logo">
-                <div class="logo-icon">🔧</div>
-                <span>M.C. Plumbing</span>
-            </div>
+            <div class="logo"><div class="logo-icon">🔧</div><span>M.C. Plumbing</span></div>
             <a href="tel:+18314660108" class="cta-button">📞 (831) 466-0108</a>
         </div>
     </header>
@@ -407,22 +97,10 @@
     
     <section class="trust-badges">
         <div class="badges">
-            <div class="badge">
-                <div class="badge-icon">✓</div>
-                <span>Licensed & Insured</span>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">✓</div>
-                <span>100% Satisfaction</span>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">✓</div>
-                <span>24/7 Emergency</span>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">✓</div>
-                <span>Upfront Pricing</span>
-            </div>
+            <div class="badge"><div class="badge-icon">✓</div><span>Licensed & Insured</span></div>
+            <div class="badge"><div class="badge-icon">✓</div><span>100% Satisfaction</span></div>
+            <div class="badge"><div class="badge-icon">✓</div><span>24/7 Emergency</span></div>
+            <div class="badge"><div class="badge-icon">✓</div><span>Upfront Pricing</span></div>
         </div>
     </section>
     
@@ -434,56 +112,50 @@
         
         <div class="services-grid">
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Drain Cleaning" class="service-img">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695ccb2c5?w=800&q=80" alt="Professional plumber working on pipes" class="service-img">
                 <div class="service-content">
                     <h3>Drain Cleaning</h3>
-                    <p>Professional drain cleaning services for clogged sinks, showers, toilets, and main sewer lines. We use advanced equipment to clear any blockage quickly.</p>
-                    <a href="#contact">Learn More →</a>
+                    <p>Professional drain cleaning for clogged sinks, showers, toilets, and main sewer lines. We use advanced equipment to clear any blockage quickly and completely.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Water Heater" class="service-img">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Water heater installation" class="service-img">
                 <div class="service-content">
                     <h3>Water Heater Services</h3>
                     <p>Installation, repair, and maintenance for tankless and traditional water heaters. Get hot water back fast with our expert technicians.</p>
-                    <a href="#contact">Learn More →</a>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Leak Repair" class="service-img">
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Leak repair plumbing" class="service-img">
                 <div class="service-content">
                     <h3>Leak Repair</h3>
-                    <p>Fast leak detection and repair services. From dripping faucets to hidden pipe leaks, we find and fix the problem quickly.</p>
-                    <a href="#contact">Learn More →</a>
+                    <p>Fast leak detection and repair. From dripping faucets to hidden pipe leaks, we find and fix the problem quickly before it causes damage.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=600&q=80" alt="Toilet Repair" class="service-img">
+                <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=800&q=80" alt="Toilet repair service" class="service-img">
                 <div class="service-content">
                     <h3>Toilet Repair</h3>
-                    <p>Toilet installation, repair, and replacement. We fix running toilets, clogs, and all toilet issues promptly.</p>
-                    <a href="#contact">Learn More →</a>
+                    <p>Toilet installation, repair, and replacement. We fix running toilets, clogs, and all toilet issues promptly with same-day service.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1581578731117-e0a820139a29?w=600&q=80" alt="Faucet & Fixture" class="service-img">
+                <img src="https://images.unsplash.com/photo-1581578731117-e0a820139a29?w=800&q=80" alt="Kitchen faucet installation" class="service-img">
                 <div class="service-content">
                     <h3>Faucet & Fixture</h3>
-                    <p>Installation and repair of all types of faucets, showerheads, and plumbing fixtures. Upgrade your bathroom or kitchen today.</p>
-                    <a href="#contact">Learn More →</a>
+                    <p>Professional installation and repair of all types of faucets, showerheads, and plumbing fixtures. Upgrade your bathroom or kitchen today.</p>
                 </div>
             </div>
             
             <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1509798908625-7f37a68e8e18?w=600&q=80" alt="Emergency Plumbing" class="service-img">
+                <img src="https://images.unsplash.com/photo-1509798908625-7f37a68e8e18?w=800&q=80" alt="Emergency plumbing service" class="service-img">
                 <div class="service-content">
                     <h3>Emergency Plumbing</h3>
-                    <p>24/7 emergency plumbing services when you need us most. We're available nights, weekends, and holidays for urgent issues.</p>
-                    <a href="tel:+18314660108">Call Now →</a>
+                    <p>24/7 emergency plumbing when you need us most. Available nights, weekends, and holidays for water heater failures, major leaks, and sewer backups.</p>
                 </div>
             </div>
         </div>
@@ -491,11 +163,8 @@
     
     <section class="areas">
         <div class="areas-content">
-            <div class="section-title">
-                <h2>Serving Santa Cruz County</h2>
-                <p>Proudly serving these communities and surrounding areas</p>
-            </div>
-            
+            <h2>Serving Santa Cruz County</h2>
+            <p>Proudly serving these communities and surrounding areas</p>
             <div class="areas-grid">
                 <div class="area-tag">Santa Cruz</div>
                 <div class="area-tag">Aptos</div>
@@ -515,20 +184,17 @@
             <h2>What Our Customers Say</h2>
             <p>Trusted by homeowners throughout Santa Cruz County</p>
         </div>
-        
         <div class="testimonials-grid">
             <div class="testimonial">
                 <p class="testimonial-text">"Fast response time and excellent work! They fixed my leak within an hour of calling. Very professional and reasonably priced."</p>
                 <p class="testimonial-author">John D.</p>
                 <p class="testimonial-location">Santa Cruz, CA</p>
             </div>
-            
             <div class="testimonial">
                 <p class="testimonial-text">"Best plumber in Santa Cruz! They installed my new water heater same-day. Very clean work and explained everything clearly."</p>
                 <p class="testimonial-author">Sarah M.</p>
                 <p class="testimonial-location">Aptos, CA</p>
             </div>
-            
             <div class="testimonial">
                 <p class="testimonial-text">"Had an emergency on a Sunday night. They answered immediately and were at my house within 30 minutes. Life savers!"</p>
                 <p class="testimonial-author">Mike R.</p>
@@ -545,13 +211,8 @@
     
     <footer class="footer">
         <p>© 2026 M.C. Plumbing. All rights reserved.</p>
-        <p>Licensed & Insured | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-        <p>Serving Santa Cruz, Aptos, Capitola, Soquel & Surrounding Areas</p>
+        <p>Licensed & Insured | Serving Santa Cruz, Aptos, Capitola, Soquel & Surrounding Areas</p>
         <p class="phone-number">📞 (831) 466-0108</p>
     </footer>
-    
-    <script>
-        console.log('M.C. Plumbing - Santa Cruz');
-    </script>
 </body>
 </html>

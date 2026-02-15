@@ -15,6 +15,7 @@
     <meta property="og:title" content="Best Plumber in Soquel | Emergency Plumbing Services">
     <meta property="og:description" content="Need a reliable plumber in Soquel? We provide emergency plumbing services, drain cleaning, water heater installation, and more.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200">
     
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
@@ -102,9 +103,11 @@
         }
         
         .hero {
-            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            background: linear-gradient(rgba(30, 58, 95, 0.85), rgba(45, 90, 135, 0.85)), url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
         }
         
@@ -198,7 +201,7 @@
         .service-card {
             background: white;
             border-radius: 12px;
-            padding: 30px;
+            overflow: hidden;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -206,6 +209,16 @@
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .service-content {
+            padding: 25px;
         }
         
         .service-icon {
@@ -217,7 +230,7 @@
             align-items: center;
             justify-content: center;
             font-size: 1.8rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         
         .service-card h3 {
@@ -421,45 +434,57 @@
         
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon">🚿</div>
-                <h3>Drain Cleaning</h3>
-                <p>Professional drain cleaning services for clogged sinks, showers, toilets, and main sewer lines. We use advanced equipment to clear any blockage quickly.</p>
-                <a href="#contact">Learn More →</a>
+                <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Drain Cleaning" class="service-img">
+                <div class="service-content">
+                    <h3>Drain Cleaning</h3>
+                    <p>Professional drain cleaning services for clogged sinks, showers, toilets, and main sewer lines. We use advanced equipment to clear any blockage quickly.</p>
+                    <a href="#contact">Learn More →</a>
+                </div>
             </div>
             
             <div class="service-card">
-                <div class="service-icon">🔥</div>
-                <h3>Water Heater Services</h3>
-                <p>Installation, repair, and maintenance for tankless and traditional water heaters. Get hot water back fast with our expert technicians.</p>
-                <a href="#contact">Learn More →</a>
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Water Heater" class="service-img">
+                <div class="service-content">
+                    <h3>Water Heater Services</h3>
+                    <p>Installation, repair, and maintenance for tankless and traditional water heaters. Get hot water back fast with our expert technicians.</p>
+                    <a href="#contact">Learn More →</a>
+                </div>
             </div>
             
             <div class="service-card">
-                <div class="service-icon">🔩</div>
-                <h3>Leak Repair</h3>
-                <p>Fast leak detection and repair services. From dripping faucets to hidden pipe leaks, we find and fix the problem quickly.</p>
-                <a href="#contact">Learn More →</a>
+                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Leak Repair" class="service-img">
+                <div class="service-content">
+                    <h3>Leak Repair</h3>
+                    <p>Fast leak detection and repair services. From dripping faucets to hidden pipe leaks, we find and fix the problem quickly.</p>
+                    <a href="#contact">Learn More →</a>
+                </div>
             </div>
             
             <div class="service-card">
-                <div class="service-icon">🚽</div>
-                <h3>Toilet Repair</h3>
-                <p>Toilet installation, repair, and replacement. We fix running toilets, clogs, and all toilet issues promptly.</p>
-                <a href="#contact">Learn More →</a>
+                <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=600&q=80" alt="Toilet Repair" class="service-img">
+                <div class="service-content">
+                    <h3>Toilet Repair</h3>
+                    <p>Toilet installation, repair, and replacement. We fix running toilets, clogs, and all toilet issues promptly.</p>
+                    <a href="#contact">Learn More →</a>
+                </div>
             </div>
             
             <div class="service-card">
-                <div class="service-icon">🛁</div>
-                <h3>Faucet & Fixture</h3>
-                <p>Installation and repair of all types of faucets, showerheads, and plumbing fixtures. Upgrade your bathroom or kitchen today.</p>
-                <a href="#contact">Learn More →</a>
+                <img src="https://images.unsplash.com/photo-1581578731117-e0a820139a29?w=600&q=80" alt="Faucet & Fixture" class="service-img">
+                <div class="service-content">
+                    <h3>Faucet & Fixture</h3>
+                    <p>Installation and repair of all types of faucets, showerheads, and plumbing fixtures. Upgrade your bathroom or kitchen today.</p>
+                    <a href="#contact">Learn More →</a>
+                </div>
             </div>
             
             <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <h3>Emergency Plumbing</h3>
-                <p>24/7 emergency plumbing services when you need us most. We're available nights, weekends, and holidays for urgent issues.</p>
-                <a href="tel:+18314660108">Call Now →</a>
+                <img src="https://images.unsplash.com/photo-1509798908625-7f37a68e8e18?w=600&q=80" alt="Emergency Plumbing" class="service-img">
+                <div class="service-content">
+                    <h3>Emergency Plumbing</h3>
+                    <p>24/7 emergency plumbing services when you need us most. We're available nights, weekends, and holidays for urgent issues.</p>
+                    <a href="tel:+18314660108">Call Now →</a>
+                </div>
             </div>
         </div>
     </section>
@@ -525,31 +550,8 @@
         <p class="phone-number">📞 (831) 466-0108</p>
     </footer>
     
-    <!-- Lead Capture Form -->
-    <div id="lead-form" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999;">
-        <div style="max-width: 500px; margin: 50px auto; background: white; padding: 30px; border-radius: 12px;">
-            <h3 style="margin-bottom: 20px;">Get Your Free Quote</h3>
-            <form id="quoteForm">
-                <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px;">
-                <input type="email" placeholder="Email Address" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px;">
-                <input type="tel" placeholder="Phone Number" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px;">
-                <textarea placeholder="Describe your plumbing issue..." rows="4" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px;"></textarea>
-                <button type="submit" class="cta-button" style="width: 100%;">Get Free Quote</button>
-            </form>
-            <button onclick="document.getElementById('lead-form').style.display='none'" style="margin-top: 15px; background: none; border: none; color: #666; cursor: pointer;">Close</button>
-        </div>
-    </div>
-    
     <script>
-        // Simple lead form handler
-        document.getElementById('quoteForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you! We have received your request and will contact you shortly.');
-            document.getElementById('lead-form').style.display = 'none';
-        });
-        
-        // Track basic analytics
-        console.log('Soquel Plumbing Pros - Page Loaded');
+        console.log('Soquel Plumbing Pros - Soquel');
     </script>
 </body>
 </html>
